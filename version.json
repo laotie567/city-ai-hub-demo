@@ -1,0 +1,6 @@
+{
+  "builtAt": "2026-10-28T04:32:48.311Z",
+  "source": "app/dist",
+  "landing": "deploy/landing/index.html",
+  "note": "静态演示站：数据为种子 mock，无后端；localStorage 仅存浏览器本地。"
+}

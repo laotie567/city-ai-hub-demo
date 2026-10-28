@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="description" content="城市AI公共服务中心 · 五平台协同与 Token 计量结算闭环的可操作演示（演示样机，样例数据/模拟计量/角色即视角）。" />
+<meta property="og:title" content="城市AI公共服务中心 · 可操作演示" />
+<meta property="og:description" content="五平台协同与 Token 计量结算闭环的可操作演示：数据、交易、交付、模型、算力，一条链从需求发布走到计量结算。" />
+<meta name="theme-color" content="#0c2338" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2317324d'/%3E%3Ctext x='16' y='22' font-size='15' text-anchor='middle' fill='%23ffffff' font-family='sans-serif'%3EAI%3C/text%3E%3C/svg%3E" />
+<title>城市AI公共服务中心 · 可操作演示</title>
+<style>
+  :root{--navy:#0c2338;--navy2:#123a5c;--blue:#2f6fd0;--gold:#f0b429;--ink:#eaf2fb;--muted:#a9c1d8;--card:rgba(255,255,255,.06);--line:rgba(255,255,255,.14)}
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{min-height:100vh;background:radial-gradient(1100px 700px at 18% 0%,#1c4a72 0%,#0c2338 45%,#071827 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.6}
+  .wrap{max-width:1120px;margin:0 auto;padding:56px 22px 40px}
+  .badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,209,102,.55);color:#ffd166;border-radius:999px;padding:6px 14px;font-size:13px;letter-spacing:.12em}
+  .badge i{width:7px;height:7px;border-radius:50%;background:#ffd166;display:inline-block}
+  h1{font-size:clamp(30px,5vw,58px);line-height:1.16;letter-spacing:.01em;margin:22px 0 10px;font-weight:700}
+  .sub{font-size:clamp(15px,2vw,20px);color:#cfe0f2;max-width:780px;margin:0 0 26px}
+  .actions{display:flex;flex-wrap:wrap;gap:14px;margin:28px 0 14px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;border-radius:10px;padding:14px 24px;font-size:16px;font-weight:600;transition:transform .15s ease,background .15s ease;border:1px solid transparent}
+  .btn:hover{transform:translateY(-1px)}
+  .primary{background:var(--blue);color:#fff;box-shadow:0 12px 30px rgba(47,111,208,.32)}
+  .ghost{background:rgba(255,255,255,.04);color:#dbe9f8;border-color:rgba(255,255,255,.24)}
+  .hint{font-size:13px;color:var(--muted);margin:6px 0 0}
+  .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:34px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px}
+  .card b{display:block;font-size:16px;margin-bottom:6px}
+  .card span{color:#c7d8ea;font-size:13px}
+  .meta{display:flex;flex-wrap:wrap;gap:10px 22px;color:var(--muted);font-size:13px;margin-top:26px}
+  .meta em{font-style:normal;color:#ffd166}
+  .footer{border-top:1px solid rgba(255,255,255,.12);margin-top:38px;padding-top:16px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;color:#8fa9c4;font-size:12px}
+  .qrbox{display:flex;align-items:center;gap:16px;margin-top:30px;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:14px;padding:14px 18px;width:max-content}
+  .qrbox img{width:116px;height:116px;border-radius:8px;background:#fff;padding:6px}
+  .qrbox b{display:block;font-size:15px;margin-bottom:4px}
+  .qrbox span{font-size:12px;color:var(--muted)}
+  @media(max-width:760px){.wrap{padding:34px 16px 28px}.grid{grid-template-columns:1fr}.actions{flex-direction:column}.btn{width:100%}.meta{gap:6px 14px}.qrbox{display:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <span class="badge"><i></i>演示环境 · 海外公网访问</span>
+  <h1>城市AI公共服务中心</h1>
+  <p class="sub">五平台协同与 Token 计量结算闭环的<b>可操作演示</b>：数据、交易、交付、模型、算力，一条链从需求发布走到计量结算。所有页面均可点击体验。</p>
+  <div class="actions">
+    <a class="btn primary" href="./demo/">进入可操作演示 →</a>
+    <a class="btn ghost" href="./media/demo-intro.mp4">先看 15 分钟讲解视频</a>
+  </div>
+  <p class="hint">电脑 / 平板横屏体验最佳；手机已适配，可横屏或直接浏览（页面支持菜单切换与表格横向滑动）。</p>
+  <section class="grid">
+    <div class="card"><b>数据是样例</b><span>全部为演示种子数据，不连真实业务系统，不涉及公民个人信息。</span></div>
+    <div class="card"><b>计量是模拟</b><span>Token 与结算按真实业务规则模拟，用于验证链路，不是实际计费依据。</span></div>
+    <div class="card"><b>角色是视角</b><span>六个角色用于展示职责边界，真实身份与权限在生产版接入。</span></div>
+  </section>
+  <div class="qrbox"><img src="./qr.png" alt="扫码在手机打开演示" /><div><b>手机扫码打开</b><span>同一演示地址 · 手机/平板/电脑均可用</span></div></div>
+  <div class="meta">
+    <span>14 个业务页面</span><span>6 类角色</span><span>主链路 10 步</span><span>演示样机 · <em>不作为生产系统或验收依据</em></span>
+  </div>
+  <footer class="footer">
+    <span>城市AI公共服务中心 · 可操作演示</span>
+    <span>数据截至 2026-10-28 · 演示环境 · 示意数据</span>
+  </footer>
+</main>
+</body>
+</html>
